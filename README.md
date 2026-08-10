@@ -28,6 +28,22 @@ today, then bind it under Falcon-1024 + ML-DSA-65 with an RFC-3161 timestamp) is
 the commercial **`algovoi-reseal`** package. The two share this exact
 verification code, so anything `algovoi-reseal` produces, this open tool checks.
 
+## The AlgoVoi Reseal product family
+
+This open verifier is the free entry point. The commercial tiers add producing,
+auditing at scale, and the full records estate — and everything they produce is
+offline-verifiable by this same Apache-2.0 tool, so you never have to trust the
+sealer:
+
+| Product | What it adds | Tier | Docs |
+|---|---|---|---|
+| **`algovoi-reseal`** | Produce the seals: verify a classical RSA/ECDSA signature today, then bind it under Falcon-1024 + ML-DSA-65 with an RFC-3161 timestamp. | from $39/yr | [reseal](https://docs.algovoi.co.uk/reseal) |
+| **Evidence Auditor** (`algovoi-evidence-audit`) | Point it at a whole archive → verify every signature (classical + post-quantum), flag the weak/expired/quantum-exposed, and produce a signed, tamper-evident audit report. | from $299/yr | [evidence-auditor](https://docs.algovoi.co.uk/evidence-auditor) |
+| **Verifiable Compliance Suite** | The full self-hosted records estate: write-once vault, retention & legal holds, console, SIEM, HSM/KMS key custody, and at-scale re-anchoring. | enterprise | [verifiable-compliance-suite](https://docs.algovoi.co.uk/verifiable-compliance-suite) |
+
+The licensed packages are distributed from AlgoVoi's own gated index (not PyPI);
+this free verifier stays public so anyone can independently check their output.
+
 ## Trust model (same as the sealer)
 
 An artifact carries its signing public key, so verification proves internal
