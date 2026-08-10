@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algovoi-reseal-verify"
+version = "0.2.0"
+description = "Open verifier and inspector for AlgoVoi Reseal: triage classical RSA/ECDSA signatures and verify post-quantum reseal attestations offline. Don't trust the sealer, check the bytes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "AlgoVoi", email = "chopmob@gmail.com" }]
+keywords = ["post-quantum", "falcon", "ml-dsa", "rfc3161", "verifier",
+            "digital-signature", "pades", "cades", "evidence", "offline-verify"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security :: Cryptography",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "rfc8785>=0.1.4",
+    "pqcrypto>=0.4.0",
+    "cryptography>=42.0",
+    "asn1crypto>=1.5",
+]
+
+[project.urls]
+Homepage = "https://algovoi.co.uk"
+Documentation = "https://docs.algovoi.co.uk/reseal"
+
+[project.scripts]
+av-reseal-verify = "algovoi_reseal_verify.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
