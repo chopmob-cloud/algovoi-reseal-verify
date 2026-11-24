@@ -1,6 +1,5 @@
 # AlgoVoi Reseal — Open Verifier (`av-reseal-verify`)
 
-
 [![PyPI](https://img.shields.io/pypi/v/algovoi-reseal-verify)](https://pypi.org/project/algovoi-reseal-verify/) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 
 **An [AlgoVoi](https://algovoi.co.uk) project · Apache-2.0.** This is the free,
