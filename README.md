@@ -1,5 +1,8 @@
 # AlgoVoi Reseal — Open Verifier (`av-reseal-verify`)
 
+
+[![PyPI](https://img.shields.io/pypi/v/algovoi-reseal-verify)](https://pypi.org/project/algovoi-reseal-verify/)
+
 **An [AlgoVoi](https://algovoi.co.uk) project · Apache-2.0.** This is the free,
 open half of AlgoVoi Reseal. It does two things:
 
